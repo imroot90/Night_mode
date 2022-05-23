@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night mode | Demo</title>
+    <!-- 외부 CSS 적용 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 외부 js 적용 -->
+    <script src=""></script>   
+</head>
+<!-- <body style="background-color: rgb(255, 249, 199); color: rgb(110, 109, 38);"> -->
+
+<body>
+    <!-- 헤더 -->
+    <header>
+        <h1 class="title">
+            <spna class="t1" 
+                style="background-color:#2c256e;color:rgb(235, 236, 163);">N</spna>ight mode</h1>
+    </header>
+
+    <!-- 자바스크립트 -->
+    <input 
+    class="btn1" type="button" value="🌻" 
+    onclick="alert('Sun')
+    document.querySelector('body').style.backgroundColor='#e4e3a3';
+    document.querySelector('body').style.color='black';
+    ">
+
+    <input 
+    class="btn2" type="button" value="🌙" 
+    onclick="alert('moon')
+    document.querySelector('body').style.backgroundColor='#273792';
+    document.querySelector('body').style.color='white';
+    ">
+
+    <input id="Night__mode" type="button" value="🌙" onclick="
+    // this
+    // var taget = document.querySelector('body');
+        if (document.querySelector('#Night__mode').value === '🌙') {
+            document.querySelector('body').style.backgroundColor = '#273792';
+            document.querySelector('body').style.color = 'white';
+            document.querySelector('#Night__mode').value = '🌻';
+        } else {
+            document.querySelector('body').style.backgroundColor = '#e4e3a3';
+            document.querySelector('body').style.color = 'black';
+            document.querySelector('#Night__mode').value = '🌙';
+        }
+    ">
+
+    <!-- 네비 -->
+    <nav>
+        <ul>
+            <li class="menu">메뉴1</li>
+            <li class="menu">메뉴2</li>
+            <li class="menu">메뉴3</li>
+        </ul>
+    </nav>
+    <!-- 정보 -->
+    <main>
+        <dl class="info">
+            <dt class="title"> <h2>자바스크립트 데모버젼</h2>
+                <dd class="text">오늘은 자바스크립트 기초를 배우면서 간단하게 나이트모드를 만들어 적용시켜보고, 기본적인 공부방법 및 가이드라인을 제시해드리겠습니다. 잘 따라오시죠~!</dd>
+            </dt>
+        </dl>
+    </main>
+    <!-- 카피 -->
+    <footer>
+        <div class="title">ghgh1022</div>
+        <div class="copy">Copyrightⓒ 2022 All rights reserved.</div>
+    </footer>
+</body>
+</html>
